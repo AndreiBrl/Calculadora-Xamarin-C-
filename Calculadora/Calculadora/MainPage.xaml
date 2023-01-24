@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+    <Grid BackgroundColor="Black" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"  />
+            <RowDefinition Height="100"  />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        <BoxView Grid.Row="0" BackgroundColor="black" Grid.ColumnSpan="4"  />
+        <Label Margin="5" Text="0"  x:Name="label" Grid.Row="0"   Grid.ColumnSpan="4"  VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" FontSize="50"/>
+        <BoxView Grid.Row="1" BackgroundColor="black" Grid.ColumnSpan="4" />
+        <Label  x:Name="labelAntecipaResultado" TextColor="LightSlateGray" Margin="5" Text=""  Grid.Row="1" Grid.ColumnSpan="4"  VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" FontSize="35"/>
+        <Button x:Name="btn7" Clicked="onSelectNumber" Grid.Row="2" Grid.Column="0" BackgroundColor="white" Text="7" TextColor="Gray" FontSize="50" CornerRadius="15"/>
+        <Button x:Name="btn8" Clicked="onSelectNumber"  Grid.Row="2" Grid.Column="1" BackgroundColor="white" Text="8" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btn9"  Clicked="onSelectNumber" Grid.Row="2" Grid.Column="2" BackgroundColor="white" Text="9" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnDivisao" Clicked="btnDivisao_Clicked" Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" Text="/" TextColor="black" FontSize="50" CornerRadius="15" />
+
+        <Button x:Name="btn4" Clicked="onSelectNumber"  Grid.Row="3" Grid.Column="0" BackgroundColor="white" Text="4" TextColor="Gray" FontSize="50" CornerRadius="15"/>
+        <Button x:Name="btn5" Clicked="onSelectNumber"  Grid.Row="3" Grid.Column="1" BackgroundColor="white" Text="5" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btn6" Clicked="onSelectNumber"  Grid.Row="3" Grid.Column="2" BackgroundColor="white" Text="6" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnMultiplicacao" Clicked="btnMultiplicacao_Clicked" Grid.Row="3" Grid.Column="3" BackgroundColor="Orange" Text="X" TextColor="black" FontSize="50" CornerRadius="15" />
+
+        <Button x:Name="btn1" Clicked="onSelectNumber"  Grid.Row="4" Grid.Column="0" BackgroundColor="white" Text="1" TextColor="Gray" FontSize="50" CornerRadius="15"/>
+        <Button x:Name="btn2" Clicked="onSelectNumber"  Grid.Row="4" Grid.Column="1" BackgroundColor="white" Text="2" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btn3" Clicked="onSelectNumber"  Grid.Row="4" Grid.Column="2" BackgroundColor="white" Text="3" TextColor="Gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnSubtracao" Clicked="btnSubtracao_Clicked" Grid.Row="4" Grid.Column="3" BackgroundColor="orange" Text="-" TextColor="black" FontSize="50" CornerRadius="15" />
+
+        <Button x:Name="btn0" Clicked="onSelectNumber" Grid.Row="5" Grid.ColumnSpan="3" BackgroundColor="white" Text="0" TextColor="gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnSoma" Clicked="btnSoma_Clicked" Grid.Row="5" Grid.Column="3" BackgroundColor="orange" Text="+" TextColor="black" FontSize="50" CornerRadius="15" />
+
+
+        <Button x:Name="btnC" Clicked="btnC_Clicked" Grid.Row="6" Grid.Column="0" BackgroundColor="white" Text="C" TextColor="gray" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnVirgula" Clicked="btnVirgula_Clicked" Grid.Row="6" Grid.Column="1" BackgroundColor="Orange" Text="," TextColor="black" FontSize="50" CornerRadius="15" />
+        <Button x:Name="btnIgual" Clicked="btnIgual_Clicked" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" BackgroundColor="orange" Text="=" TextColor="black" FontSize="50" CornerRadius="15" />
+
+
+
+
+
+    </Grid>
+</ContentPage>
+ 
